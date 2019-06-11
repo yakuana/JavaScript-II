@@ -77,14 +77,19 @@ contains('Pencil', items, function(bool) {
 
 /* STRETCH PROBLEM */
 
+// tester array 
 const myItems = ['Pencil', 'Pencil', 'Notebook', 'Pencil', 'yo-yo', 'Gum'];
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
+  // represents index of item in array 
   let idx = 0; 
-  return cb(array.filter((item) => array.indexOf(item, idx += 1) === -1)); 
+
+  // filter creates new array, indexOf returns -1 if item is not present 
+  return cb(array.filter(item => array.indexOf(item, idx += 1) === -1)); 
 }
 
 // removeDuplicates function invocation 
