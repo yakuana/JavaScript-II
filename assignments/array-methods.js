@@ -76,7 +76,7 @@ console.log(allCaps);
 
 let largeShirts = [];
 
-largeShirts = runners.filter(runner => runner.shirt_size == "L"); 
+largeShirts = runners.filter(runner => runner.shirt_size === "L"); 
 
 console.log(largeShirts);
 
